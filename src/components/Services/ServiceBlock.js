@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./styles.module.css";
 
 const ServiceBlock = ({ logo, title, description }) => {
   return (
-    <div className="w-auto p-7">
+    <div className="w-auto p-7 cursor-pointer">
       <div className="bg-gray-103 p-6 rounded-lg">
         <img
           loading="lazy"
@@ -13,9 +14,11 @@ const ServiceBlock = ({ logo, title, description }) => {
         <h0 className="tracking-widest text-indigo-500 font-medium title-font text-2xl">
           {title}
         </h0>
-        <p className="leading-relaxed text-base">
-          Fingerstache flexitarian street art 5-bit waistcoat. Distillery
-          hexagon disrupt edison bulbche.
+        <p
+          title={description}
+          className={`${styles.descriptionRow} leading-relaxed text-base`}
+        >
+          {description}
         </p>
       </div>
     </div>

@@ -25,8 +25,9 @@ class Services extends Component {
                   <div className="hover:shadow-xl">
                     <ServiceBlock
                       key={item.id}
-                      logo={item.logo}
-                      title={item.title}
+                      {...item}
+                      // logo={item.logo}
+                      // title={item.title}
                     />
                   </div>
                 );

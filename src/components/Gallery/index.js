@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Jello from "react-reveal/Jello";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+
+const DEFAULT_STATE = {
+  photoIndex: 0,
+  isOpen: false,
+};
+
+const IMAGES = [
+  "/assets/Gallery/_MG_5266.jpg",
+  "/assets/Gallery/_MG_5271.jpg",
+  "/assets/003.jpg",
+  "/assets/Gallery/Parkveien_15B_039.jpg",
+  "/assets/Gallery/Parkveien_15B_057.jpg",
+  "/assets/Gallery/Vidars_gate_9A_033.jpg",
+];
 
 const Gallery = () => {
+  const [state, setState] = useState(DEFAULT_STATE);
+
   return (
     <div id="gallery">
       <section className="text-gray-600 body-font">
         <Jello left duration={1300}>
-          <div className="container px-5 py-24 mx-auto flex flex-wrap">
+          <div
+            className="container px-5 py-24 mx-auto flex flex-wrap"
+            onClick={() =>
+              setState((prev) => ({ ...prev, isOpen: !prev.isOpen }))
+            }
+          >
             <div className="flex w-full mb-20 flex-wrap">
               <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
                 Gallery
@@ -73,6 +96,31 @@ const Gallery = () => {
             </div>
           </div>
         </Jello>
+        {state.isOpen && (
+          <Lightbox
+            mainSrc={IMAGES[state.photoIndex]}
+            nextSrc={IMAGES[(state.photoIndex + 1) % IMAGES.length]}
+            prevSrc={
+              IMAGES[(state.photoIndex + IMAGES.length - 1) % IMAGES.length]
+            }
+            onCloseRequest={() =>
+              setState((prev) => ({ ...prev, isOpen: false }))
+            }
+            onMovePrevRequest={() =>
+              setState((prev) => ({
+                ...prev,
+                photoIndex:
+                  (state.photoIndex + IMAGES.length - 1) % IMAGES.length,
+              }))
+            }
+            onMoveNextRequest={() =>
+              setState((prev) => ({
+                ...prev,
+                photoIndex: (state.photoIndex + 1) % IMAGES.length,
+              }))
+            }
+          />
+        )}
       </section>
     </div>
   );
