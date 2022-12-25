@@ -17,10 +17,16 @@ class Img extends React.Component {
           alt={this.props.alt}
           {...this.props}
           style={style}
+          loading="lazy"
           onLoad={() => this.setState({ loaded: true })}
         />
         {loaded ? null : (
-          <img alt={this.props.alt} {...this.props} src={placeholder} />
+          <img
+            alt={this.props.alt}
+            {...this.props}
+            loading="lazy"
+            src={placeholder}
+          />
         )}
       </>
     );

@@ -77,6 +77,7 @@ const images = (data) => {
       key={item.src}
       alt="main-offer"
       src={item.src}
+      loading="lazy"
     />
   ));
 };

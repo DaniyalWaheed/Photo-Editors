@@ -21,6 +21,7 @@ const Gallery = () => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
                   <img
+                    loading="lazy"
                     alt="gallery"
                     className="w-full object-cover h-full object-center block cursor-pointer"
                     src="/assets/Gallery/_MG_5266.jpg"
@@ -28,6 +29,7 @@ const Gallery = () => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <img
+                    loading="lazy"
                     alt="gallery"
                     className="w-full object-cover h-full object-center block cursor-pointer"
                     src="/assets/Gallery/_MG_5271.jpg"
@@ -35,6 +37,7 @@ const Gallery = () => {
                 </div>
                 <div className="md:p-2 p-1 w-full">
                   <img
+                    loading="lazy"
                     alt="gallery"
                     className="w-full h-full object-cover object-center block cursor-pointer"
                     src="/assets/003.jpg"
@@ -44,6 +47,7 @@ const Gallery = () => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
                   <img
+                    loading="lazy"
                     alt="gallery"
                     className="w-full h-full object-cover object-center block cursor-pointer"
                     src="/assets/Gallery/Parkveien_15B_039.jpg"
@@ -51,6 +55,7 @@ const Gallery = () => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <img
+                    loading="lazy"
                     alt="gallery"
                     className="w-full object-cover h-full object-center block cursor-pointer"
                     src="/assets/Gallery/Parkveien_15B_057.jpg"
@@ -58,6 +63,7 @@ const Gallery = () => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <img
+                    loading="lazy"
                     alt="gallery"
                     className="w-full object-cover h-full object-center block cursor-pointer"
                     src="/assets/Gallery/Vidars_gate_9A_033.jpg"

@@ -5,6 +5,7 @@ const ServiceBlock = ({ logo, title, description }) => {
     <div className="w-auto p-7">
       <div className="bg-gray-103 p-6 rounded-lg">
         <img
+          loading="lazy"
           className="h-52 rounded w-full object-cover object-center mb-6"
           src={logo}
           alt="content"

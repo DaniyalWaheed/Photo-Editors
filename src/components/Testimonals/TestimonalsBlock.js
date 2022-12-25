@@ -21,6 +21,7 @@ const TestimonalsBlock = () => {
           </p>
           <a class="inline-flex items-center" href="/">
             <img
+              loading="lazy"
               alt="testimonial"
               src="https://dummyimage.com/106x106"
               class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
