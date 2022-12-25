@@ -13,6 +13,18 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 770px) {
+  .offerImg {
+    display: block;
+    /* max-height: 30vw; */
+    height: 50vh !important;
+    margin: auto;
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+  }
+}
+
 .sliderDots {
   padding-bottom: 34px;
 }

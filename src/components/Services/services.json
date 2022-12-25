@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "logo": "/assets/2D-FLOOR-PLAN.jpeg",
+    "title": "2D Floow Plan"
+  },
+  {
+    "id": 2,
+    "logo": "/assets/Object-Removal-Or-Decluttering.jpg",
+    "title": "Object Removal Or Decluttering"
+  },
+  {
+    "id": 3,
+    "logo": "/assets/HDR-Enhancement-and-Blending.jpg",
+    "title": "HDR Enhancement and Blending"
+  },
+  {
+    "id": 4,
+    "logo": "/assets/Day-To-Dusk-Image.jpg",
+    "title": "Day To Dusk Image"
+  },
+  {
+    "id": 5,
+    "logo": "/assets/Virtual-Furnishing.jpg",
+    "title": "Virtual Furnishing"
+  },
+  {
+    "id": 6,
+    "logo": "/assets/3D-FLOOR-PLAN.jpeg",
+    "title": "3D FLOOR PLAN"
+  }
+]
