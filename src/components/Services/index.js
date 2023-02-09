@@ -3,6 +3,7 @@ import Flash from "react-reveal/Flash";
 import ServiceBlock from "./ServiceBlock";
 import SERVICES_LIST from "./services.json";
 import styles from "./styles.module.css";
+import { history } from "../../history";
 
 class Services extends Component {
   constructor(props) {
@@ -25,9 +26,8 @@ class Services extends Component {
                   <div className="hover:shadow-xl">
                     <ServiceBlock
                       key={item.id}
+                      onClick={() => history.push("/services")}
                       {...item}
-                      // logo={item.logo}
-                      // title={item.title}
                     />
                   </div>
                 );

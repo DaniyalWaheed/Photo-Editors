@@ -1,13 +1,13 @@
 import React, { Component, useState } from "react";
 import contents from "./contents.json";
 
-const DemoNavbar = () => {
+const DemoNavbar = ({ isHomePage = true }) => {
   const [showToggle, setShowToggle] = useState(false);
 
   return (
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 fixed top-0 z-50 w-full  body-font bg-gray-200">
       <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="#home" class="flex items-center">
+        <a href="/" class="flex items-center">
           <img src={"/assets/LOGO.png"} class="h-14 " alt="Flowbite Logo" />
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             Green Hills
@@ -41,16 +41,17 @@ const DemoNavbar = () => {
           id="navbar-default"
         >
           <ul class="flex flex-col p-4 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            {contents.map((item) => (
-              <li key={item.id}>
-                <a
-                  href={item.href}
-                  className="mr-5 hover:text-gray-900 cursor-pointer"
-                >
-                  {item.title}
-                </a>
-              </li>
-            ))}
+            {isHomePage &&
+              contents.map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={item.href}
+                    className="mr-5 hover:text-gray-900 cursor-pointer"
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              ))}
           </ul>
         </div>
       </div>
@@ -65,7 +66,8 @@ class Header extends Component {
   }
 
   render() {
-    return <DemoNavbar />;
+    const { isHomePage } = this.props;
+    return <DemoNavbar isHomePage={isHomePage} />;
   }
 }
 

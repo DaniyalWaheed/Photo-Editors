@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import ContactUs from "../../components/ContactUs";
-import Footer from "../../components/Footer";
 import Gallery from "../../components/Gallery";
-import Header from "../../components/Header";
 import Loader from "../../components/Loader";
 import Services from "../../components/Services";
 import ImageSlider from "../../components/Slider";
 import Testimonals from "../../components/Testimonals";
 import { sliderImages } from "./api-handler";
+import PageWrapper from "../../components/PageWrapper";
 
 class Homepage extends Component {
   constructor(props) {
@@ -23,8 +22,6 @@ class Homepage extends Component {
     const data = await Promise.all([sliderImages()]);
     const sliderData = data[0];
 
-    console.log("DATA:", sliderData);
-
     this.setState({ sliderData });
   };
 
@@ -37,13 +34,13 @@ class Homepage extends Component {
 
     return (
       <>
-        <Header />
-        <ImageSlider data={sliderData} />
-        <Gallery />
-        <Services />
-        <Testimonals />
-        <ContactUs />
-        <Footer />
+        <PageWrapper>
+          <ImageSlider data={sliderData} />
+          <Gallery />
+          <Services />
+          <Testimonals />
+          <ContactUs />
+        </PageWrapper>
       </>
     );
   }

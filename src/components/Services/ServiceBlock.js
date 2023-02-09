@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const ServiceBlock = ({ logo, title, description }) => {
+const ServiceBlock = ({ logo, title, description, onClick }) => {
   return (
-    <div className="w-auto p-7 cursor-pointer group relative">
+    <div className="w-auto p-7 cursor-pointer group relative" onClick={onClick}>
       <div className="bg-gray-103 p-6 relative w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-10 lg:aspect-w-1">
         <img
           loading="lazy"
