@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 
-const PageWrapper = ({ children }) => {
+const PageWrapper = ({ children, isHomePage = true }) => {
   return (
     <>
-      <Header isHomePage={false} />
+      <Header isHomePage={isHomePage} />
       <Fragment>{children}</Fragment>
       <Footer />
     </>

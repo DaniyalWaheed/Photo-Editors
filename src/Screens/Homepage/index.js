@@ -34,7 +34,7 @@ class Homepage extends Component {
 
     return (
       <>
-        <PageWrapper>
+        <PageWrapper isHomePage={true}>
           <ImageSlider data={sliderData} />
           <Gallery />
           <Services />

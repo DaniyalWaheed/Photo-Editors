@@ -10,7 +10,7 @@ const ServiceDetailsPage = () => {
   }, []);
 
   return (
-    <PageWrapper>
+    <PageWrapper isHomePage={false}>
       <ImageSlider data={sliderImages()} />
       <ServiceContainer />
     </PageWrapper>

@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import contents from "./contents.json";
 
 const DemoNavbar = ({ isHomePage = true }) => {
@@ -59,16 +59,10 @@ const DemoNavbar = ({ isHomePage = true }) => {
   );
 };
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Header = (props) => {
+  const { isHomePage } = props;
 
-  render() {
-    const { isHomePage } = this.props;
-    return <DemoNavbar isHomePage={isHomePage} />;
-  }
-}
+  return <DemoNavbar isHomePage={isHomePage} />;
+};
 
 export default Header;

@@ -20,8 +20,7 @@ class ContactUs extends Component {
                   Contact Us
                 </h1>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                  Whatever cardigan tote bag tumblr hexagon brooklyn
-                  asymmetrical gentrify.
+                  Feel free to discuss your required service
                 </p>
               </div>
               <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -80,12 +79,14 @@ class ContactUs extends Component {
                   </div>
                   <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                     <a href="##" className="text-indigo-500">
-                      editors.photo07@gmail.com
+                      arslanangel70@gmail.com
                     </a>
                     <p className="leading-normal my-5">
-                      49 Smith St.
+                      St #12, H#27-A LHR
                       <br />
-                      Saint Cloud, MN 56301
+                      Lahore, Pakistan, 54000
+                      <br />
+                      Phone: +92 3244218774
                     </p>
                     <span className="inline-flex">
                       <a href="##" className="text-gray-500">

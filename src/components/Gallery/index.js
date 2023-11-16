@@ -9,12 +9,12 @@ const DEFAULT_STATE = {
 };
 
 const IMAGES = [
-  "/assets/Gallery/_MG_5266.jpg",
-  "/assets/Gallery/_MG_5271.jpg",
-  "/assets/003.jpg",
-  "/assets/Gallery/Parkveien_15B_039.jpg",
-  "/assets/Gallery/Parkveien_15B_057.jpg",
-  "/assets/Gallery/Vidars_gate_9A_033.jpg",
+  "/assets/Gallery_1/1st.jpg",
+  "/assets/Gallery_1/2nd.jpg",
+  "/assets/Gallery_1/3rd.jpg",
+  "/assets/Gallery_1/4th.jpg",
+  "/assets/Gallery_1/5th.jpg",
+  "/assets/Gallery_1/6th.jpg",
 ];
 
 const Gallery = () => {
